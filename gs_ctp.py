@@ -20,11 +20,11 @@ while True:
         print("Digite uma opção válida")
         esc = int(input("--> "))
     if esc == 1:
-        # print("Digite a senha")
-        # senha_usu = input("--> ")
-        # while senha_usu != senha:
-        #     print("Você errou a senha, digite novamente")
-        #     senha_usu = input("--> ")
+         print("Digite a senha")
+         senha_usu = input("--> ")
+         while senha_usu != senha:
+             print("Você errou a senha, digite novamente")
+             senha_usu = input("--> ")
         print("Pronto, vamos cadastrar o produto")
         print("Digite o código do produto")
         cod_p = int(input("--> "))
@@ -103,7 +103,7 @@ while True:
                                         print("Digite uma quantidade válida")
                                         quant_p = int(input("--> "))
                                     while quant_p > verif:
-                                        print("Infelizmente essa quantidade ultrapassa nosso estoque, temos apenas ", quants_prod_prod(indice_p), " em estoque, digite um valor válido")
+                                        print("Infelizmente essa quantidade ultrapassa nosso estoque, temos apenas ", quants_prod(indice_p), " em estoque, digite um valor válido")
                                         quant_p = int(input("--> "))
                                     sobra = quant_p - quants_prod[indice_p]
                                     tot_comp = precs_prod[indice_p] * quant_p
